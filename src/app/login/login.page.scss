@@ -1,0 +1,37 @@
+form {
+    margin-top: 200px;
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  
+  .error-message {
+    color: #ff0000; /* Color del mensaje de error */
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  
+  ion-button {
+    margin-top: 16px;
+  }
+  
+  ion-title {
+    font-size: 24px;
+  }
+  
+  ion-item {
+    margin-bottom: 40px;
+  }
+  
+  ion-input {
+   margin-top: 20px;
+   background-color: #ffffff; /* Fondo blanco */
+   padding: 20px; /* Espaciado interno */
+   border-radius: 10px; /* Borde redondeado */
+  }
+  
+  /* Puedes agregar más estilos según tus necesidades */
+  

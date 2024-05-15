@@ -1,0 +1,21 @@
+<ion-list>
+  <ion-item *ngFor="let playlist of playlists">
+    <ion-label>
+      <h2>ID: {{ playlist.id }}</h2>
+      <p>Nombre: {{ playlist.nombre }}</p>
+      <!-- Agrega más información según las propiedades de tu modelo Playlist -->
+    </ion-label>
+    <!-- Botones de acción -->
+    <ion-buttons slot="end">
+      <ion-button color="danger" (click)="null">
+        Eliminar
+      </ion-button>
+      <ion-button color="primary" (click)="null">
+        Modificar
+      </ion-button>
+      <ion-button color="success" (click)="null">
+        Abrir
+      </ion-button>
+    </ion-buttons>
+  </ion-item>
+</ion-list>
