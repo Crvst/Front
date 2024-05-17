@@ -7,14 +7,14 @@
     </ion-label>
     <!-- Botones de acción -->
     <ion-buttons slot="end">
-      <ion-button color="danger" (click)="null">
-        Eliminar
+      <ion-button color="success" (click)="null">
+        Abrir
       </ion-button>
       <ion-button color="primary" (click)="null">
         Modificar
       </ion-button>
-      <ion-button color="success" (click)="null">
-        Abrir
+      <ion-button color="danger" (click)="deletePlaylist(playlist.id)">
+        Eliminar
       </ion-button>
     </ion-buttons>
   </ion-item>

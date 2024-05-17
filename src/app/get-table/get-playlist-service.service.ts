@@ -15,4 +15,10 @@ export class PlaylistService {
   getPlaylists(): Observable<Playlist[]> {
     return this.http.get<Playlist[]>(this.apiUrl);
   }
+
+  deletePlaylist(id: any): Observable<any> {
+    console.log('ABY');
+    return this.http.delete<any>(`${this.apiUrl}/${id}`);
+  }
+  
 }

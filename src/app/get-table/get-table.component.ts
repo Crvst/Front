@@ -32,5 +32,10 @@ export class GetTableComponent  implements OnInit {
       }
     );
   }
+
+  deletePlaylist(id: any){
+    console.log('HOLA');
+    this.playlistService.deletePlaylist(id);
+  }
 }
 

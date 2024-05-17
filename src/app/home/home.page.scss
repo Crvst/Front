@@ -1,0 +1,14 @@
+
+  ion-toolbar {
+    --background: #006696; /* Color de fondo de la barra de herramientas */
+    --color: #fff; /* Color del texto de la barra de herramientas */
+  }
+  ion-menu::part(backdrop) {
+    background-color: rgba(0, 146, 190, 0.5);
+  }
+  
+  ion-menu::part(container) {
+    border-radius: 0 20px 20px 0;
+  
+    box-shadow: 4px 0px 16px rgba(18, 6, 180, 0.18);
+  }
