@@ -1,0 +1,18 @@
+
+<!-- nuevo-playlist.component.html -->
+<form [formGroup]="playlistForm" (ngSubmit)="guardarPlaylist()" class="formulario-estilo">
+  <ion-item>
+    <ion-label position="floating">Nombre</ion-label>
+    <ion-input type="text" name="nombre" formControlName="nombre"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">ID Usuario</ion-label>
+    <ion-input type="number" name="idUsuario" formControlName="id_Usuario"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Playlist URL</ion-label>
+    <ion-input type="text" name="playlistUrl" formControlName="playlist_Url"></ion-input>
+  </ion-item>
+  <ion-button expand="full" type="submit" [disabled]="!playlistForm.valid">Guardar</ion-button>
+</form>
+

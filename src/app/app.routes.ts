@@ -10,7 +10,11 @@ export const routes: Routes = [
   {
     path: 'home',
     loadComponent: () => import('./home/home.page').then(m => m.HomePage),
+  },  {
+    path: 'new-playlist',
+    loadComponent: () => import('./new-playlist/new-playlist.page').then( m => m.NewPlaylistPage)
   }
+
 
  
 ];

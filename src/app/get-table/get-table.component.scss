@@ -1,17 +1,44 @@
 /* Ajuste de posición de la lista de reproducción */
 .playlist-list {
-    position: relative;
-    z-index: 999; /* Asegura que la lista de reproducción esté por encima del sidebar */
-    width: 60%;
+  position: relative;
+  z-index: 999; /* Asegura que la lista de reproducción esté por encima del sidebar */
+  width: 60%;
 }
 
 /* Ajuste de margen para dispositivos md */
 .list-md ion-label:hover{
-    background-color: #949494; /* Cambia este color por el que desees */
-    transition: background-color 0.3s ease; /* Añade una transición suave al cambio de color */
-    padding: 12px;
-    border-radius: 2px;
-
+  background-color: #949494; /* Cambia este color por el que desees */
+  transition: background-color 0.3s ease; /* Añade una transición suave al cambio de color */
+  padding: 12px;
+  border-radius: 2px;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.create-button {
+  margin-bottom: 20px;
+  background-color: #4180ab; /* color1 */
+  color: #ffffff; /* color2 */
+}
+
+.playlist-container {
+  width: 100%;
+  max-width: 600px;
+  background-color: #e4ebf0; /* color5 */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ion-item {
+  --background: #ffffff; /* color2 */
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
