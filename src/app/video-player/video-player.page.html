@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Video Player
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let channelUrl of channelUrls" (click)="playChannel(channelUrl)">
+      <ion-button expand="full" fill="clear">{{ channelUrl }}</ion-button>
+    </ion-item>
+    
+  </ion-list>
+</ion-content>
