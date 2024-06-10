@@ -11,7 +11,7 @@
             <p>Nombre: {{ playlist.nombre }}</p>
           </ion-label>
           <ion-buttons slot="end">
-            <ion-button color="success" (click)="null">Abrir</ion-button>
+            <ion-button color="success" (click)="abrirPlaylist(playlist.id)">Abrir</ion-button>
             <ion-button color="primary" (click)="modificarPlaylist(playlist)">Modificar</ion-button>
             <ion-button color="danger" (click)="deletePlaylist(playlist.id)">Eliminar</ion-button>
           </ion-buttons>

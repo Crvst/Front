@@ -24,6 +24,10 @@ export class GetTableComponent  implements OnInit {
     this.loadPlaylists();
   }
 
+  abrirPlaylist(id: any){
+    this.router.navigate(['/playlist-vie'])
+  }
+
   irANuevoPlaylist() {
     this.router.navigate(['/new-playlist']);
   }

@@ -1,0 +1,16 @@
+#drop-area {
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  #drop-area:hover {
+    background-color: #f0f0f0;
+  }
+  
+  #drop-area.drag-over {
+    background-color: #e0e0e0;
+  }
+  
