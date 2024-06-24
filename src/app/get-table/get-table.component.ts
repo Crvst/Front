@@ -32,13 +32,22 @@ export class GetTableComponent  implements OnInit {
     this.router.navigate(['/new-playlist']);
   }
 
+  //abrirPlaylist(id: any) {
+    //this.router.navigate(['/vie-of-playlists', id]); // Navegar a la página VieOfPlaylistsPage con el ID de la playlist seleccionada
+  //}
+
+  obtenerPlaylistPorId(id: any){
+    this.router.navigate(['vista-playlists',{id}]);
+
+  }
+
   modificarPlaylist(playlist: any) {
     this.router.navigate(['/new-playlist', { id: playlist.id, nombre: playlist.nombre, playlist_url: playlist.playlist_url }]);
   }
   
 
   loadPlaylists() {
-    this.playlistService.getPlaylists().subscribe(
+    this.playlistService.obtenerPlaylists().subscribe(
       (data) => {
         this.playlists = data;
       },
@@ -48,9 +57,9 @@ export class GetTableComponent  implements OnInit {
     );
   }
 
-  deletePlaylist(id: any){
-    console.log('HOLA');
-    this.playlistService.deletePlaylist(id);
-  }
+  //deletePlaylist(id: any){
+   // console.log('HOLA');
+    //this.playlistService.deletePlaylist(id);
+ // }
 }
 

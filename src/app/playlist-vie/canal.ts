@@ -3,8 +3,8 @@
 export interface Canal {
     id: number;
     url: string;
-    iconUrl: string;
+    icon_url: string;
     nombre: string;
-    groupTitle: string;
+    group_title: string;
   }
   

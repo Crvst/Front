@@ -17,9 +17,9 @@ export class CanalService {
     return this.http.get<Canal[]>(this.apiUrl);
   }
 
-  getCanal(id: number): Observable<Canal> {
-    const url = `${this.apiUrl}/${id}`;
-    return this.http.get<Canal>(url);
+  getCanal(group: string): Observable<Canal[]> {
+    const url = `${this.apiUrl}/${group}`;
+    return this.http.get<Canal[]>(url);
   }
 
   createCanal(canal: Canal): Observable<Canal> {

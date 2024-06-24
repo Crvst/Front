@@ -1,0 +1,81 @@
+/* Estilos para la cabecera */
+ion-header {
+    background-color: #3880ff; /* Color de fondo */
+    color: white; /* Color del texto */
+  }
+  
+  /* Estilos para la toolbar de la cabecera */
+  ion-toolbar {
+    --background: #3880ff;
+    --color: white;
+  }
+  
+  /* Estilos para el contenido */
+  ion-content {
+    --background: #f0f0f5; /* Color de fondo del contenido */
+    padding: 16px; /* Espaciado interior */
+  }
+  
+  /* Estilos para los elementos de selección */
+  ion-item {
+    margin-bottom: 20px; /* Espaciado entre elementos */
+  }
+  
+  /* Estilos para las etiquetas */
+  ion-label {
+    font-weight: bold; /* Texto en negrita */
+  }
+  
+  /* Estilos para las opciones del cuadro de selección */
+  ion-select-option {
+    --padding-start: 16px; /* Espaciado a la izquierda */
+  }
+  
+  /* Estilos para el mensaje de no hay canales disponibles */
+  div p {
+    text-align: center; /* Alinear texto al centro */
+    color: #999; /* Color del texto */
+  }
+  
+  /* Estilos para la lista de canales */
+  ion-list {
+    background-color: white; /* Color de fondo de la lista */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 8px; /* Espaciado interior */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  
+  /* Estilos para los elementos de la lista */
+  ion-item {
+    --background: white;
+    border-bottom: 1px solid #eee; /* Borde inferior */
+  }
+  
+  /* Estilos para el avatar */
+  ion-avatar img {
+    border-radius: 50%; /* Imagen redonda */
+    width: 48px; /* Ancho de la imagen */
+    height: 48px; /* Altura de la imagen */
+    object-fit: cover; /* Ajustar imagen */
+  }
+  
+  /* Estilos para las etiquetas dentro de los elementos de la lista */
+  ion-label h2 {
+    font-size: 18px; /* Tamaño de fuente */
+    margin: 0; /* Sin márgenes */
+  }
+  
+  ion-label p {
+    font-size: 14px; /* Tamaño de fuente */
+    color: #666; /* Color del texto */
+    margin: 0; /* Sin márgenes */
+  }
+  
+  /* Estilos para el botón */
+  ion-button {
+    --padding-start: 12px; /* Espaciado a la izquierda */
+    --padding-end: 12px; /* Espaciado a la derecha */
+    --background: #3880ff; /* Color de fondo */
+    --color: white; /* Color del texto */
+  }
+      

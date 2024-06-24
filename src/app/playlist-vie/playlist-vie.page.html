@@ -1,13 +1,42 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>playlistVie</ion-title>
+    <ion-title>Crear Contenido de Playlist</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">playlistVie</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <!-- Cuadro de selección para filtrar por grupo -->
+  <ion-item>
+    <ion-label>Filtrar por grupo</ion-label>
+    <ion-select [(ngModel)]="grupoSeleccionado">
+      <ion-select-option [value]="'Todos'">Todos</ion-select-option>
+      <ion-select-option *ngFor="let grupo of extraerGrupos(canales)" [value]="grupo">{{ grupo }}</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <!-- Cuadro de selección para seleccionar playlist -->
+  <ion-item>
+    <ion-label>Seleccionar Playlist</ion-label>
+    <ion-select [(ngModel)]="playlistSeleccionada">
+      <ion-select-option *ngFor="let playlist of playlists" [value]="playlist">{{ playlist.nombre }}</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <div *ngIf="canalesFiltrados.length === 0">
+    <p>No hay canales disponibles</p>
+  </div>
+  
+  <ion-list *ngIf="canalesFiltrados.length > 0">
+    <ion-item *ngFor="let canal of canalesFiltrados">
+      <ion-avatar slot="start">
+        <img [src]="canal.icon_url" alt="{{ canal.nombre }}">
+      </ion-avatar>
+      <ion-label>
+        <h2>{{ canal.nombre }}</h2>
+        <p>{{ canal.url }}</p>
+      </ion-label>
+      <ion-button color="success" (click)="(canal.url)">Reproducir</ion-button>
+      <ion-button (click)="agregarCanalAPlaylist(canal.id)">Agregar a Playlist</ion-button>
+    </ion-item>
+  </ion-list>
 </ion-content>

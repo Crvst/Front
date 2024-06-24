@@ -23,7 +23,13 @@ export const routes: Routes = [
   {
     path: 'playlist-vie',
     loadComponent: () => import('./playlist-vie/playlist-vie.page').then( m => m.PlaylistViePage)
+  },  {
+    path: 'vista-playlists',
+    loadComponent: () => import('./vista-playlists/vista-playlists.page').then( m => m.VistaPlaylistsPage)
   },
+
+ 
+
 
   //{
    // path: 'video-player',

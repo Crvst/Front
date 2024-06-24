@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Canales de la Playlist</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="canales.length === 0">
+    <p>No hay canales disponibles para esta playlist.</p>
+  </div>
+
+  <div *ngIf="canales.length > 0">
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>URL</th>
+          <th>Icono</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let canal of canales">
+          <td>{{ canal.nombre }}</td>
+          <td>{{ canal.url }}</td>
+          <td>
+            <img [src]="canal.icon_url" alt="{{ canal.nombre }}" width="50">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</ion-content>
