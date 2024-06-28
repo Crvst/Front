@@ -5,6 +5,7 @@ import { IonContent, IonHeader, IonTitle, IonToolbar, IonList, IonItem, IonAvata
 import { Canal } from './canal';
 import { CanalService } from './canal-service';
 import { PlaylistService } from '../get-table/get-playlist-service.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-playlist-vie',
@@ -21,7 +22,7 @@ export class PlaylistViePage implements OnInit {
 
   grupoSeleccionado = 'Todos'; // Grupo seleccionado por defecto
 
-  constructor(private canalService: CanalService, private playlistService: PlaylistService) { }
+  constructor(private canalService: CanalService, private playlistService: PlaylistService, private router: Router) { }
 
   ngOnInit() {
     this.getCanales();
@@ -70,6 +71,6 @@ export class PlaylistViePage implements OnInit {
 
   abrirReproductor(url: any): void {
     // Abre el reproductor con la URL proporcionada
-    window.open(url, '_blank');
+    this.router.navigate(['/video-player'], { queryParams: { url } });
   }
 }

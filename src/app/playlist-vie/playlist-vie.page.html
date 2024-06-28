@@ -35,7 +35,7 @@
         <h2>{{ canal.nombre }}</h2>
         <p>{{ canal.url }}</p>
       </ion-label>
-      <ion-button color="success" (click)="(canal.url)">Reproducir</ion-button>
+      <ion-button color="success" (click)="abrirReproductor(canal.url)">Reproducir</ion-button>
       <ion-button (click)="agregarCanalAPlaylist(canal.id)">Agregar a Playlist</ion-button>
     </ion-item>
   </ion-list>
